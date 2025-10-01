@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>нүүр</title>
+  <link rel="icon" type="image/png" href="logo.png">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background: #242323;
+      color: white;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 5px 20px;
+    }
+
+    header .logo {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+    }
+
+    header nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 12px;
+      font-size: 15px;
+    }
+
+    header nav a:hover {
+      color: orange;
+    }
+
+    .contact-btn {
+      background: rgb(39, 40, 41);
+      color: white;
+      border: none;
+      padding: 8px 18px;
+      border-radius: 20px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      background-color: #242323;
+      padding: 30px 0;
+    }
+
+    .hero-content h1 {
+      font-size: 40px;
+      margin-bottom: 15px;
+      color: orange;
+      text-align: center;
+    }
+
+    .hero-content h2 {
+      font-size: 28px;
+      margin-bottom: 25px;
+      color: #fca503;
+    }
+
+    p {
+      font-size: 20px;
+      color: #b4d6cf;
+      text-align: justify;
+    }
+
+    .content {
+      max-width: 1000px;
+      background: #eceaea;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      color: rgb(15, 13, 13);
+      font-size: 18px;
+      line-height: 1.6;
+      text-align: left;
+      margin: 20px auto;
+    }
+
+    .card-container {
+      display: none;
+    }
+
+    footer .foot {
+      text-align: center;
+      padding: 30px 0;
+      background: transparent;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <button><img src="logo.png" alt="Лого" width="60"></button>
+      </a>
+
+      <nav>
+        <a href="gishvvn.html"><button>Гишүүнчлэл</button></a>
+        <a href="hadgalamj.html"><button>Хадгаламж</button></a>
+        <a href="zeel.html"><button>Зээл</button></a>
+      </nav>
+<div>
+      <a href="holboo.html">
+        <button class="contact-btn">Хүсэлт илгээх</button>
+      </a>
+    </div>
+      <div class="card">
+        <div class="card__info">
+          <div class="card__logo">MasterCard</div>
+          <div class="card__chip">
+            <svg class="card__chip-lines" role="img" width="20px" height="20px" viewBox="0 0 100 100" aria-label="Chip">
+              <g opacity="0.8">
+                <polyline points="0,50 35,50" fill="none" stroke="#000" stroke-width="2"></polyline>
+                <polyline points="0,20 20,20 35,35" fill="none" stroke="#000" stroke-width="2"></polyline>
+                <polyline points="50,0 50,35" fill="none" stroke="#000" stroke-width="2"></polyline>
+                <polyline points="65,35 80,20 100,20" fill="none" stroke="#000" stroke-width="2"></polyline>
+                <polyline points="100,50 65,50" fill="none" stroke="#000" stroke-width="2"></polyline>
+                <polyline points="35,35 65,35 65,65 35,65 35,35" fill="none" stroke="#000" stroke-width="2"></polyline>
+                <polyline points="0,80 20,80 35,65" fill="none" stroke="#000" stroke-width="2"></polyline>
+                <polyline points="50,100 50,65" fill="none" stroke="#000" stroke-width="2"></polyline>
+                <polyline points="65,65 80,80 100,80" fill="none" stroke="#000" stroke-width="2"></polyline>
+              </g>
+            </svg>
+            <div class="card__chip-texture"></div>
+          </div>
+
+          <div class="card__type">debit</div>
+          <div class="card__number">
+            <span class="card__digit-group">0123</span>
+            <span class="card__digit-group">4567</span>
+            <span class="card__digit-group">8901</span>
+            <span class="card__digit-group">2345</span>
+          </div>
+          <div class="card__valid-thru" aria-label="Valid thru">Valid<br>thru</div>
+          <div class="card__exp-date"><time datetime="2038-01">01/38</time></div>
+          <div class="card__name" aria-label="Dee Stroyer">Денежный Магнит</div>
+          <div class="card__vendor" role="img" aria-labelledby="card-vendor">
+            <span id="card-vendor" class="card__vendor-sr">Mastercard</span>
+          </div>
+          <div class="card__texture"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero" style="background-color: #242323;">
+    <div class="hero-content">
+      <h1>Денежный Магнит ХЗХ</h1>
+    </div>
+
+    <div class="content-container">
+      <div class="front-content">
+        <p>ТАНИЛЦУУЛГА</p>
+      </div>
+
+      <div class="content">
+        <p>
+          Манай хоршоо нь 2012.06.08-ний өдөр "Эрдэнэт Үйлдвэр" ТӨҮГ-ийн ҮЭХ-н дарга асан Б.Төгсбаярын санаачлагаар үйлдвэрийн нийт 26 уурхайчин хамт олон эвлэлдэн нэгдэж санхүүгийн эрх чөлөөнд хүрэх хүсэл мөрөөдөлдөө хөтлөгдөн үүсгэн байгуулахаар шийдвэрлэж 2012.07.16 өдөр хуулийн этгээдийн улсын бүртгэлд бүртгүүлэн 52 сая төгрөгний хувь нийлүүлсэн хөрөнгөтэй байгуулдагдсан. 2012.12.12-ны өдрийн билэгт сайн өдөр Санхүүгийн Зохицуулах хорооноос Хадгаламж, зээлийн үйл ажиллагаа явуулах тусгай зөвшөөрлөө авсан. Одоогоор нийт 460 гаран гишүүн, 2.5 тэрбум төгрөгний хөрөнгөтэй болсон байна. Тэргүүлэгчдийн зөвлөл 5 хүн, Хяналтын зөвлөл 3 хүн, Зээлийн хороо 3 хүн, Ажлын алба 4 хүний орон тоотойгоор үйл ажиллагаагаа өргөжүүлэн ажиллаж байна. Бид Улс, орон нутагт ажлын байрыг нэмэгдүүлж цаашлаад төсөв бүрдүүлэх татварын орлогод хувь нэмэр оруулсаар ирлээ. Цаашид манай байгууллага нь үйл ажиллагаагаа өргөжүүлэн Монгол улсын бүх орон нутагт хүрч ажиллахаар зорьж байна. Мөн сүүлийн технологийн дэвшилийг үйл ажиллагаандаа нэвтрүүлэн гишүүддээ түргэн шуурхай үйлчилгээ үзүүлж байна. Бид гишүүдийнхээ сайн сайхан амьдралын төлөө санхүүгийн цогц үйлчилээг хамгийн найдвартай, түргэн шуурхай үзүүлэх. Ажилчдынхаа нийгмийн асуудлыг улс орны нийгэм эдийн засгийн өсөлт, орон нутгийн амжиргааны түвшинтэй уялдуулан байнга өсгөх бодлого баримтлан ажиллаж байна. Хоршооны эрхлэх боломжтой бусад ажил үйлчилгээг нэвтрүүлэх, гишүүдийн тоо болон активыг тогтмол нэмэгдүүлэх, Санхүүгийн зохицуулах хорооны зохистой харьцааны шалгуур үзүүлэлтийг тогтмол ханган ажиллах болно.
+        </p>
+      </div>
+    </div> <!-- .content-container хаав -->
+
+  </section>
+
+
+    
+ 
+</body>
+</html>

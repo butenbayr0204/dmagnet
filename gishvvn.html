@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Гишүүн</title>
+  <link rel="icon" type="image/png" href="logo.png">
+  <style>
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+   
+        header {
+            background: #242323;
+            color: white;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 5px 20px;
+        
+        }
+
+        header .logo {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 10px;
+            width: 100%;
+        }
+    header nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 12px;
+      font-size: 15px;
+    }
+    header nav a:hover {
+      color: orange;
+    }
+    .contact-btn {
+      background: orange;
+      color: white;
+      border: none;
+      padding: 8px 18px;
+      border-radius: 20px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .hero {
+      position: relative;
+      background-color: #242323;
+      height: 10vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+   
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+    .hero-content h1 {
+      font-size: 40px;
+      margin-bottom: 15px;
+      color: rgb(85, 7, 209);
+    }
+    .hero-content h2 {
+      font-size: 28px;
+      margin-bottom: 25px;
+    }
+    .hero-content button {
+      background: transparent;
+      color: white;
+      border: 2px solid orange;
+      padding: 10px 25px;
+      border-radius: 25px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .hero-content button:hover {
+      background: rgb(236, 11, 41);
+      color: black;
+    }
+/* ✅ Текстүүдийн ерөнхий grid байрлал */
+.text-section {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 25px;
+}
+
+/* ✅ Нэг текст блокийн загвар */
+.text-box {
+  background: linear-gradient(145deg, #ffffff, #f3f3f3);
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.text-box::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, rgba(255,165,0,0.1), transparent 70%);
+  transform: rotate(25deg);
+  z-index: 0;
+}
+
+.text-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.text-box h3 {
+  color: #ff7a00;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  position: relative;
+  z-index: 1;
+}
+
+.text-box h3::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #ff7a00;
+  margin-top: 6px;
+  border-radius: 2px;
+}
+
+.text-box p {
+  color: #333;
+  font-size: 15px;
+  line-height: 1.7;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <a href="index.html">
+     <button> <img src="logo.png" alt="Лого" width="60"></button></a>
+      <nav>
+        
+        
+        <a href="gishvvn.html">
+        <button>Гишүүнчлэл</button></a>
+        <a href="hadgalamj.html">
+        <button>Хадгаламж</button></a>
+        <a href="zeel.html">
+        <button>Зээл</button></a>
+       
+      </nav>
+      <!-- From Uiverse.io by JkHuger --> 
+<div class="card">
+<div class="card__info">
+    <div class="card__logo">MasterCard</div>
+    <div class="card__chip">
+        <svg class="card__chip-lines" role="img" width="20px" height="20px" viewBox="0 0 100 100" aria-label="Chip">
+            <g opacity="0.8">
+                <polyline points="0,50 35,50" fill="none" stroke="#000" stroke-width="2"></polyline>
+                <polyline points="0,20 20,20 35,35" fill="none" stroke="#000" stroke-width="2"></polyline>
+                <polyline points="50,0 50,35" fill="none" stroke="#000" stroke-width="2"></polyline>
+                <polyline points="65,35 80,20 100,20" fill="none" stroke="#000" stroke-width="2"></polyline>
+                <polyline points="100,50 65,50" fill="none" stroke="#000" stroke-width="2"></polyline>
+                <polyline points="35,35 65,35 65,65 35,65 35,35" fill="none" stroke="#000" stroke-width="2"></polyline>
+                <polyline points="0,80 20,80 35,65" fill="none" stroke="#000" stroke-width="2"></polyline>
+                <polyline points="50,100 50,65" fill="none" stroke="#000" stroke-width="2"></polyline>
+                <polyline points="65,65 80,80 100,80" fill="none" stroke="#000" stroke-width="2"></polyline>
+            </g>
+        </svg>
+        <div class="card__chip-texture"></div>
+    </div>
+      <div class="card__type">debit</div>
+      <div class="card__number">
+        <span class="card__digit-group">0123</span>
+        <span class="card__digit-group">4567</span>
+        <span class="card__digit-group">8901</span>
+        <span class="card__digit-group">2345</span>
+    </div>
+      <div class="card__valid-thru" aria-label="Valid thru">Valid<br>thru</div>
+      <div class="card__exp-date"><time datetime="2038-01">01/38</time></div>
+      <div class="card__name" aria-label="Dee Stroyer">Денежный Магнит</div>
+      <div class="card__vendor" role="img" aria-labelledby="card-vendor">
+      <span id="card-vendor" class="card__vendor-sr">Mastercard</span>
+    </div>
+<div class="card__texture"></div>
+        </div>
+    </div>
+    
+    </div>
+   
+  </header>
+  <section class="hero">
+    <div class="hero-content">
+        
+        <h1>Заавар зөвлөмж</h1>
+        
+    </div>
+    
+</div>
+
+  </section>
+<section class="text-section">
+  <div class="text-box">
+    <h3>Хоршооны дүрэм болон үйл ажиллагааны түүх, явцтай сайтар танилцах, өөрийн эрэлт хэрэгцээнд нийцэх эсэх талаар дүгнэлт хийх</h3>
+    <p>Бүтэц, зохион байгуулалтын судлан ардчилсан хамтын удирдлага, хяналтын системтэй эсэхийг судлах</p>
+  </div>
+
+  <div class="text-box">
+    <h3>Гишүүний хувь хөрөнгө</h3>
+    <p>Хоршоонд гишүүн өөрийн хувь хөрөнгөөр хоршооноос үйлчилгээ авах, үйл ажиллагаанд нь оролцох эрхтэй болдог.</p>
+  </div>
+
+  <div class="text-box">
+    <h3>Хадгаламж, зээлийн үйлчилгээ эрхлэх тусгай зөвшөөрөлтэй эсэх</h3>
+    <p>Санхүүгийн зохицуулах хорооны шалгуур үзүүлэлтийн хяналт байгаа эсэх</p>
+  </div>
+
+  <div class="text-box">
+    <h3>Өөртөө тохирсон санхүүгийн бүтээгдэхүүн үйлчилгээ сонгох</h3>
+    <p>Өөрийн эзэмшсэн бичиг баримт болон нөхцөлдөө тохируулан сонгох</p>
+  </div>
+
+  <div class="text-box">
+    <h3>Гишүүний оруулсан хувь хөрөнгө гэж юу вэ?</h3>
+    <p>Хадгаламж, зээлийн хоршоонд элсэхэд оруулдаг тухайн хоршооны дүрмээр тогтоосон мөнгөн хөрөнгө.</p>
+  </div>
+
+  <div class="text-box">
+    <h3>Бүрдүүлэх бичиг баримтууд :</h3>
+    <p>1. Цээж зураг - 2 хувь<br>2. Иргэний үнэмлэх<br>3. Элсэлтийн хураамж<br>4. Гишүүний хувь хөрөнгө</p>
+  </div>
+
+  <div class="text-box">
+    <h3>Өөрийн үнэт зүйлийг мэдрэх мэдрүүлэх</h3>
+    <p>Өөрт тохирсон санхүүгийн бүтээгдэхүүн үйлчилгээг хэрэглэх</p>
+  </div>
+
+  <div class="text-box">
+    <h3>Хоршооноос гишүүдийг идэвхижүүлэхээр зохион байгуулж буй арга хэмжээнд хамрагдах</h3>
+    <p>Явдал чирэгдэлгүй хурдан шуурхай үйлчилгээ авах</p>
+  </div>
+
+  <div class="text-box">
+    <h3>Оруулсан хөрөнгөөсөө их багаас үл хамааран аливаа асуудлыг шийдэхэд саналаа нэг эрхтэйгээр оролцоно.</h3>
+    <p>Оруулсан хувь хөрөнгийн хэмжээ, хугацаа зэргээс үл хамааран санал өгөх эрх нь ижил байна.</p>
+  </div>
+</section>
+
+</body>
+</html>
